@@ -2,166 +2,145 @@
 <html>
   <head>
      <title>12th-Student Calculation</title>
-     
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
      <script type="text/javascript" src="script.js"></script>
  
     <style type="text/css">
-        h2 {
-        	text-align: center;
-        	color: #FF0000;
-        	font-style: italic;
-        	font-weight: bold;
-        }
-        
-        table  {
-        	text-align: left;
-        	background-color: #FFE77A;
-        	padding: 10px;
-
-        	
-        }
-        
-        #tablemain{
-                     margin-left: auto;
+      #tablemain
+	  {
+		   margin-left: auto;
   margin-right: auto;
-        	
-        }
-        
-        #Estimate  {
-        	 background-color: #F1F334;
-        	 color: #000000; 
-        	 font-size: 15px; 
-        	 height: 35px; 
-        	 width: 100px;
-        	 
-        }
-        .calc{
-            border: 2px solid grey;
-        }
-        .calc td{
-            border: 2px solid black;
-            text-align: center;
-        }
-        .calc th{
-           border: 2px solid black;  
-           text-align: center;
-        }
-        
+	  }
     </style>
 
   </head>
   <body>
     
   <p><center>12TH-STANDARD MARK CALCULATION</center></p>
-    
+    <div class="table-responsive">
 	<table id="tablemain" >
 	
 	   	<tbody>
 		   <tr> 
-		    <td>	
-					<table>
+		    <td>	<div class="table-responsive">
+					<table class="table">
 						<tbody>
-                            <tr>
-                                <td colspan="2" >10th Top 3 Marks</td>
+							<thead class="table-dark">
+                            <tr >
+                                <td colspan="2">10th Top 3 Marks</td>
                             </tr>
+							</thead>
 							<tr>
 								<td>1st-Highest</td>
-								<td><input type="number" id="1st-Highest" placeholder="1st-Highest" required min="0" max="100">
+								<td><input type="number" id="1st-Highest" placeholder="1st-Highest" required >
 </td>
 							</tr>
                             <tr>
 								<td>2nd-Highest</td>
-								<td><input type="number" id="2nd-Highest" placeholder="2nd-Highest" required min="0" max="100">
+								<td><input type="number" id="2nd-Highest" placeholder="2nd-Highest" required >
 </td>
 							</tr>
                             <tr>
 								<td>3rd-Highest</td>
-								<td><input type="number" id="3rd-Highest" placeholder="3rd-Highest" required min="0" max="100">
+								<td><input type="number" id="3rd-Highest" placeholder="3rd-Highest" required >
 </td>
 							</tr>
+							<thead class="table-dark">
                              <tr>
                                 <td colspan="2" >11th Marks</td>
                             </tr>
+						</thead>
                             <tr>
 								<td>Tamil-11th Mark</td>
-								<td><input type="number" id="Tamil-11th Mark" placeholder="Tamil-11th Mark" required min="0" max="90">
+								<td><input type="number" id="Tamil-11th Mark" placeholder="Tamil-11th Mark" required >
 </td>
 							</tr>
+						
+							
                              <tr>
 								<td>English-11th Mark</td>
-								<td><input type="number" id="English-11th Mark" placeholder="English-11th Mark" required min="0" max="90">
+								<td><input type="number" id="English-11th Mark" placeholder="English-11th Mark" required >
 </td>
 							</tr>
                              <tr>
 								<td>Maths-11th Mark</td>
-								<td><input type="number" id="Maths-11th Mark" placeholder="Maths-11th Mark" required min="0" max="90">
+								<td><input type="number" id="Maths-11th Mark" placeholder="Maths-11th Mark" required >
 </td>
 							</tr>
                              <tr>
 								<td>Physics-11th Mark</td>
-								<td><input type="number" id="Physics-11th Mark" placeholder="Physics-11th Mark" required min="0" max="70">
+								<td><input type="number" id="Physics-11th Mark" placeholder="Physics-11th Mark" required >
 </td>
 							</tr>
                              <tr>
 								<td>Chemistry-11th Mark</td>
-								<td><input type="number" id="Chemistry-11th Mark" placeholder="Chemistry-11th Mark" required min="0" max="70">
+								<td><input type="number" id="Chemistry-11th Mark" placeholder="Chemistry-11th Mark" required>
 </td>
 							</tr>
                              <tr>
 								<td>Biology/Computer Science-11th Mark</td>
-								<td><input type="number" id="Biology/Computer Science-11th Mark" placeholder="Biology/Computer Science-11th Mark" required min="0" max="70">
+								<td><input type="number" id="Biology/Computer Science-11th Mark" placeholder="Biology/Computer Science-11th Mark" required >
 </td>
 							</tr>
+							<thead class="table-dark">
+
                                <tr>
                                 <td colspan="2" >12th Internal-Practical Marks</td>
                             </tr>
+							</thead>
                             <tr>
 								<td>Tamil-12th Internal Mark</td>
-								<td><input type="number" id="Tamil-12th Internal Mark" placeholder="Tamil-12th Internal Mark" required min="0" max="10">
+								<td><input type="number" id="Tamil-12th Internal Mark" placeholder="Tamil-12th Internal Mark" required >
 </td>
 							</tr>
                              <tr>
 								<td>English-12th Internal Mark</td>
-								<td><input type="number" id="English-12th Internal Mark" placeholder="English-12th Internal Mark" required min="0" max="10">
+								<td><input type="number" id="English-12th Internal Mark" placeholder="English-12th Internal Mark" required >
 </td>
 							</tr>
                              <tr>
 								<td>Maths-12th Internal Mark</td>
-								<td><input type="number" id="Maths-12th Internal Mark" placeholder="Maths-12th Internal Mark" required min="0" max="10">
+								<td><input type="number" id="Maths-12th Internal Mark" placeholder="Maths-12th Internal Mark" required >
 </td>
 							</tr>
                              <tr>
 								<td>Physics-12th Practical+Internal</td>
-								<td><input type="number" id="Physics-12th Practical+Internal" placeholder="Physics-12th Practical+Internal" required min="0" max="30">
+								<td><input type="number" id="Physics-12th Practical+Internal" placeholder="Physics-12th Practical+Internal">
 </td>
 							</tr>
                              <tr>
 								<td>Chemistry-12th Practical+Internal</td>
-								<td><input type="number" id="Chemistry-12th Practical+Internal" placeholder="Chemistry-12th Practical+Internal" required  min="0" max="30">
+								<td><input type="number" id="Chemistry-12th Practical+Internal" placeholder="Chemistry-12th Practical+Internal" >
 </td>
 							</tr>
                              <tr>
 								<td>Biology/Computer Science-12th Practical+Internal Mark</td>
-								<td><input type="number" id="Biology/Computer Science-12th Practical+Internal Mark" placeholder="Biology/Computer Science-12th Practical+Internal Mark" required  min="0" max="30">
+								<td><input type="number" id="Biology/Computer Science-12th Practical+Internal Mark" placeholder="Biology/Computer Science-12th Practical+Internal Mark" required  >
 </td>
 							</tr>
 						     
 							<tr>
-							 	<td></td>
-								<td align="left" style="padding: 10px">
-									<input  id="Estimate" type="button" value="Calculate" onclick="TotalCalc()" >
+								<td align="left" style="padding: 10px" colspan="2" class="content-center">
+									<input  id="Estimate" type="button" value="Calculate" onclick="TotalCalc()" class="btn btn-success">
 								</td>
 							</tr>
 						
 					
 				    	</tbody>
 					</table>
+					</div>
 				  </td>
 			  </tr>	
 			  <tr>
 			  	<td>
-					<table class=calc>
-						<caption><b>12-Th Marks</b></caption>
+					  <div class="table-responsive"> 
+					<table class="table table-dark table-hover table-bordered">
 						<tbody>
 						<tr>
 						    <td><b> Details</b></td>
@@ -221,13 +200,15 @@
                                 <td><output id="twbiocc"></output></td>
                                 <td><output id="twebiocc"></output></td>
 							</tr>
-                            <tr><td colspan="4">Total Marks</td><td><output id="totals"></output></td></tr>
+                            <tr><td colspan="4" class="text-center">Total Marks</td><td><output id="totals"></output></td></tr>
 						</tbody>
 					</table>
+					  </div>
 				</td>
 			</tr>	
 		</tbody>
 	</table>
+	</div>
 </body>
 
 </html>
