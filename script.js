@@ -93,12 +93,12 @@ function calculatexiip(){
 function calculatexiitotal(){
 	
 
-document.getElementById("twetamil").innerHTML=parseFloat(document.getElementById("tenth").value)+parseFloat(document.getElementById("ltamil").value)+parseFloat(document.getElementById("twtamil").value);
-document.getElementById("tweenglish").innerHTML=parseFloat(document.getElementById("tenth2").value)+parseFloat(document.getElementById("lenglish").value)+parseFloat(document.getElementById("twenglish").value);
-document.getElementById("twemaths").innerHTML=parseFloat(document.getElementById("tenth1").value)+parseFloat(document.getElementById("lmaths").value)+parseFloat(document.getElementById("twmaths").value);
-document.getElementById("twephysics").innerHTML=parseFloat(document.getElementById("tenth3").value)+parseFloat(document.getElementById("lphysics").value)+parseFloat(document.getElementById("twphysics").value);
-document.getElementById("twechemistry").innerHTML=parseFloat(document.getElementById("tenth4").value)+parseFloat(document.getElementById("lchemistry").value)+parseFloat(document.getElementById("twchemistry").value);
-document.getElementById("twebiocc").innerHTML=parseFloat(document.getElementById("tenth5").value)+parseFloat(document.getElementById("lbiocc").value)+parseFloat(document.getElementById("twbiocc").value);
+document.getElementById("twetamil").innerHTML=(parseFloat(document.getElementById("tenth").value)+parseFloat(document.getElementById("ltamil").value)+parseFloat(document.getElementById("twtamil").value)).toFixed(2);
+document.getElementById("tweenglish").innerHTML=(parseFloat(document.getElementById("tenth2").value)+parseFloat(document.getElementById("lenglish").value)+parseFloat(document.getElementById("twenglish").value)).toFixed(2);
+document.getElementById("twemaths").innerHTML=(parseFloat(document.getElementById("tenth1").value)+parseFloat(document.getElementById("lmaths").value)+parseFloat(document.getElementById("twmaths").value)).toFixed(2);
+document.getElementById("twephysics").innerHTML=(parseFloat(document.getElementById("tenth3").value)+parseFloat(document.getElementById("lphysics").value)+parseFloat(document.getElementById("twphysics").value)).toFixed(2);
+document.getElementById("twechemistry").innerHTML=(parseFloat(document.getElementById("tenth4").value)+parseFloat(document.getElementById("lchemistry").value)+parseFloat(document.getElementById("twchemistry").value)).toFixed(2);
+document.getElementById("twebiocc").innerHTML=(parseFloat(document.getElementById("tenth5").value)+parseFloat(document.getElementById("lbiocc").value)+parseFloat(document.getElementById("twbiocc").value)).toFixed(2);
 document.getElementById("totals").innerHTML=(parseFloat(document.getElementById("twetamil").value)+parseFloat(document.getElementById("tweenglish").value)+parseFloat(document.getElementById("twemaths").value)+parseFloat(document.getElementById("twephysics").value)+parseFloat(document.getElementById("twechemistry").value)+parseFloat(document.getElementById("twebiocc").value)).toFixed(2);
 var mtt=parseInt(document.getElementById("twemaths").value);
 var phh=parseInt(document.getElementById("twephysics").value);
