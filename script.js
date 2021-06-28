@@ -99,6 +99,7 @@ var phh=parseInt(document.getElementById("twephysics").value);
 var chh=parseInt(document.getElementById("twechemistry").value);
 document.getElementById("cutoff").innerHTML=(mtt+((phh+chh)/2));
 
+
 }
 
 
