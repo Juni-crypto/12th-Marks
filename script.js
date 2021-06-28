@@ -86,6 +86,7 @@ function calculatexiip(){
 
 function calculatexiitotal(){
 	
+
 document.getElementById("twetamil").innerHTML=parseInt(document.getElementById("tenth").value)+parseInt(document.getElementById("ltamil").value)+parseInt(document.getElementById("twtamil").value);
 document.getElementById("tweenglish").innerHTML=parseInt(document.getElementById("tenth2").value)+parseInt(document.getElementById("lenglish").value)+parseInt(document.getElementById("twenglish").value);
 document.getElementById("twemaths").innerHTML=parseInt(document.getElementById("tenth1").value)+parseInt(document.getElementById("lmaths").value)+parseInt(document.getElementById("twmaths").value);
@@ -93,6 +94,11 @@ document.getElementById("twephysics").innerHTML=parseInt(document.getElementById
 document.getElementById("twechemistry").innerHTML=parseInt(document.getElementById("tenth4").value)+parseInt(document.getElementById("lchemistry").value)+parseInt(document.getElementById("twchemistry").value);
 document.getElementById("twebiocc").innerHTML=parseInt(document.getElementById("tenth5").value)+parseInt(document.getElementById("lbiocc").value)+parseInt(document.getElementById("twbiocc").value);
 document.getElementById("totals").innerHTML=parseInt(document.getElementById("twetamil").value)+parseInt(document.getElementById("tweenglish").value)+parseInt(document.getElementById("twemaths").value)+parseInt(document.getElementById("twephysics").value)+parseInt(document.getElementById("twechemistry").value)+parseInt(document.getElementById("twebiocc").value)
+var mtt=parseInt(document.getElementById("twemaths").value);
+var phh=parseInt(document.getElementById("twephysics").value);
+var chh=parseInt(document.getElementById("twechemistry").value);
+document.getElementById("cutoff").innerHTML=(mtt+((phh+chh)/2));
+
 }
 
 
