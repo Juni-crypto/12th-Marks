@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>12th-Student Calculation</title>
+     
+     <script type="text/javascript" src="script.js"></script>
+ 
+    <style type="text/css">
+        h2 {
+        	text-align: center;
+        	color: #FF0000;
+        	font-style: italic;
+        	font-weight: bold;
+        }
+        
+        table  {
+        	text-align: left;
+        	background-color: #FFE77A;
+        	padding: 10px;
+
+        	
+        }
+        
+        #tablemain{
+                     margin-left: auto;
+  margin-right: auto;
+        	
+        }
+        
+        #Estimate  {
+        	 background-color: #F1F334;
+        	 color: #000000; 
+        	 font-size: 15px; 
+        	 height: 35px; 
+        	 width: 100px;
+        	 
+        }
+        .calc{
+            border: 2px solid grey;
+        }
+        .calc td{
+            border: 2px solid black;
+            text-align: center;
+        }
+        .calc th{
+           border: 2px solid black;  
+           text-align: center;
+        }
+        
+    </style>
+
+  </head>
+  <body>
+    
+  <p><center>12TH-STANDARD MARK CALCULATION</center></p>
+    
+	<table id="tablemain" >
+	
+	   	<tbody>
+		   <tr> 
+		    <td>	
+					<table>
+						<tbody>
+                            <tr>
+                                <td colspan="2" >10th Top 3 Marks</td>
+                            </tr>
+							<tr>
+								<td>1st-Highest</td>
+								<td><input type="number" id="1st-Highest" placeholder="1st-Highest" required min="0" max="100">
+</td>
+							</tr>
+                            <tr>
+								<td>2nd-Highest</td>
+								<td><input type="number" id="2nd-Highest" placeholder="2nd-Highest" required min="0" max="100">
+</td>
+							</tr>
+                            <tr>
+								<td>3rd-Highest</td>
+								<td><input type="number" id="3rd-Highest" placeholder="3rd-Highest" required min="0" max="100">
+</td>
+							</tr>
+                             <tr>
+                                <td colspan="2" >11th Marks</td>
+                            </tr>
+                            <tr>
+								<td>Tamil-11th Mark</td>
+								<td><input type="number" id="Tamil-11th Mark" placeholder="Tamil-11th Mark" required min="0" max="90">
+</td>
+							</tr>
+                             <tr>
+								<td>English-11th Mark</td>
+								<td><input type="number" id="English-11th Mark" placeholder="English-11th Mark" required min="0" max="90">
+</td>
+							</tr>
+                             <tr>
+								<td>Maths-11th Mark</td>
+								<td><input type="number" id="Maths-11th Mark" placeholder="Maths-11th Mark" required min="0" max="90">
+</td>
+							</tr>
+                             <tr>
+								<td>Physics-11th Mark</td>
+								<td><input type="number" id="Physics-11th Mark" placeholder="Physics-11th Mark" required min="0" max="70">
+</td>
+							</tr>
+                             <tr>
+								<td>Chemistry-11th Mark</td>
+								<td><input type="number" id="Chemistry-11th Mark" placeholder="Chemistry-11th Mark" required min="0" max="70">
+</td>
+							</tr>
+                             <tr>
+								<td>Biology/Computer Science-11th Mark</td>
+								<td><input type="number" id="Biology/Computer Science-11th Mark" placeholder="Biology/Computer Science-11th Mark" required min="0" max="70">
+</td>
+							</tr>
+                               <tr>
+                                <td colspan="2" >12th Internal-Practical Marks</td>
+                            </tr>
+                            <tr>
+								<td>Tamil-12th Internal Mark</td>
+								<td><input type="number" id="Tamil-12th Internal Mark" placeholder="Tamil-12th Internal Mark" required min="0" max="10">
+</td>
+							</tr>
+                             <tr>
+								<td>English-12th Internal Mark</td>
+								<td><input type="number" id="English-12th Internal Mark" placeholder="English-12th Internal Mark" required min="0" max="10">
+</td>
+							</tr>
+                             <tr>
+								<td>Maths-12th Internal Mark</td>
+								<td><input type="number" id="Maths-12th Internal Mark" placeholder="Maths-12th Internal Mark" required min="0" max="10">
+</td>
+							</tr>
+                             <tr>
+								<td>Physics-12th Practical+Internal</td>
+								<td><input type="number" id="Physics-12th Practical+Internal" placeholder="Physics-12th Practical+Internal" required min="0" max="30">
+</td>
+							</tr>
+                             <tr>
+								<td>Chemistry-12th Practical+Internal</td>
+								<td><input type="number" id="Chemistry-12th Practical+Internal" placeholder="Chemistry-12th Practical+Internal" required  min="0" max="30">
+</td>
+							</tr>
+                             <tr>
+								<td>Biology/Computer Science-12th Practical+Internal Mark</td>
+								<td><input type="number" id="Biology/Computer Science-12th Practical+Internal Mark" placeholder="Biology/Computer Science-12th Practical+Internal Mark" required  min="0" max="30">
+</td>
+							</tr>
+						     
+							<tr>
+							 	<td></td>
+								<td align="left" style="padding: 10px">
+									<input  id="Estimate" type="button" value="Calculate" onclick="TotalCalc()" >
+								</td>
+							</tr>
+						
+					
+				    	</tbody>
+					</table>
+				  </td>
+			  </tr>	
+			  <tr>
+			  	<td>
+					<table class=calc>
+						<caption><b>12-Th Marks</b></caption>
+						<tbody>
+						<tr>
+						    <td><b> Details</b></td>
+						    <td><b>10th Mark</b></td>
+						    <td><b>11th Mark</b></td>
+                            <td><b>12th Internal+Practical</b></td>
+                            <td><b>12th Mark</b></td>
+						</tr>
+							<tr>
+								<td>Tamil</td>
+								<td><output id="tenth"></output></td>
+								<td><output id="ltamil"></output></td>
+                                <td><output id="twtamil"></output></td>
+								<td><output id="twetamil"></output></td>
+                                
+								
+							</tr>
+								<tr>
+								<td>English</td>
+								<td><output id="tenth2"></output></td>
+								<td><output id="lenglish"></output></td>
+                                <td><output id="twenglish"></output></td>
+								<td><output id="tweenglish"></output></td>
+                                
+								
+							</tr>
+							<tr>
+								<td>Maths</td>
+			<td><output id="tenth1"></output></td>				
+								<td><output id="lmaths"></output></td>
+                                <td><output id="twmaths"></output></td>
+								<td><output id="twemaths"></output></td>
+                                
+							</tr>
+                            <tr>
+								<td>Physics</td>
+								<td><output id="tenth3"></output></td>
+								<td><output id="lphysics"></output></td>
+                                <td><output id="twphysics"></output></td>
+								<td><output id="twephysics"></output></td>
+                                
+								
+							</tr>
+                            <tr>
+								<td>Chemistry</td>
+								<td><output id="tenth4"></output></td>
+								<td><output id="lchemistry"></output></td>
+                                <td><output id="twchemistry"></output></td>
+								<td><output id="twechemistry"></output></td>
+                                
+								
+							</tr>
+                            <tr>
+								<td>Bio/Computer</td>
+								<td><output id="tenth5"></output></td>
+								<td><output id="lbiocc"></output></td>
+                                <td><output id="twbiocc"></output></td>
+                                <td><output id="twebiocc"></output></td>
+							</tr>
+                            <tr><td colspan="4">Total Marks</td><td><output id="totals"></output></td></tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>	
+		</tbody>
+	</table>
+</body>
+
+</html>
