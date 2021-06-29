@@ -34,27 +34,21 @@ function TotalCalc()
 function calculatexith()
 {
     var t=xitamil;
-    t=t-10;
     t=t*(20/90);
     document.getElementById("ltamil").innerHTML = t.toFixed(2); 
     var e=xienglish;
-    e=e-10;
     e=e*(20/90);
     document.getElementById("lenglish").innerHTML = e.toFixed(2); 
     var m=ximaths;
-    m=m-10;
     m=m*(20/90);
     document.getElementById("lmaths").innerHTML=m.toFixed(2);
     var ph=xiphysics;
-    ph=ph-30;
     ph=ph*(20/70);
     document.getElementById("lphysics").innerHTML=ph.toFixed(2);
     var ch=xichemistry;
-    ch=ch-30;
     ch=ch*(20/70);
     document.getElementById("lchemistry").innerHTML=ch.toFixed(2);
     var bcc=xibiocc;
-    bcc=bcc-30;
     bcc=bcc*(20/70);
     document.getElementById("lbiocc").innerHTML=bcc.toFixed(2);
 
